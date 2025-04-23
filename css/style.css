@@ -19,11 +19,11 @@
 }
 
 html.active,
-body.activ {
+body.active {
   overflow: hidden;
-  /* position: fixed; This prevents bounce scrolling on iOS */
-  /* width: 100%; These ensure the body takes up the full viewport */
-  /* height: 100%; */
+  position: fixed; /* This prevents bounce scrolling on iOS */
+  width: 100%; /* These ensure the body takes up the full viewport */
+  height: 100%;
 }
 
 body {
