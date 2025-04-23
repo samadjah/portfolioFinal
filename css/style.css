@@ -18,9 +18,9 @@
   font-family: "Roboto", sans-serif;
 }
 
-html .active,
+/* html .active,
 body .active{
-  overflow: hidden;
+  overflow: hidden; */
   /* position: fixed; This prevents bounce scrolling on iOS */
   /* width: 100%; These ensure the body takes up the full viewport */
   /* height: 100%; */
