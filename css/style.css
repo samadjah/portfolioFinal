@@ -250,7 +250,6 @@ hr {
   height: 60px;
   object-fit: contain;
   margin-top:  20px;
-  
 }
 
 .card ul {
@@ -392,7 +391,17 @@ footer {
     margin-left: 24px;
     margin-top: 8px;
     border-radius: 6px;
-  }
+    transition: color 1.5s ease-in-out, 
+    box-shadow 0.5s ease-in-out;
+}
+
+.profile-details button:hover {
+  box-shadow: 4px 4px 4px var(--primary-color-backgrounds);
+  color: #274675;
+}
+
+
+
 
   .profile-details button img {
     height: 10%;
@@ -430,7 +439,13 @@ footer {
    width: 370px;
    height: 210px; 
    object-fit: cover;
+   transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
   }
+  
+  .gallery-item img:hover {
+      transform: rotate(1deg);
+      box-shadow: 10px 10px 15px #75859687;
+    }
 
 
   .my-clients {
@@ -443,8 +458,14 @@ footer {
 
   .card {
     margin-top: 48px;
+    padding-bottom: 12px;
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
   }
-
+  
+  .card:hover {
+      transform: translate(-5px,0px);
+      box-shadow: 10px 10px 15px #75859687;
+    }
   .contact  .headline .saying{
     display: block;
   }
@@ -604,7 +625,18 @@ footer {
     border: none;
     margin-top: 8px;
     border-radius: 6px;
+    transition: color 1.5s ease-in-out, 
+    box-shadow 0.5s ease-in-out;
+
   }
+  
+  .profile-details button:hover {
+      box-shadow: 4px 4px 4px var(--primary-color-headlines);
+      color: #274675;
+  }
+
+
+
 
   .profile-details button img {
     height: 40%;
@@ -652,7 +684,16 @@ footer {
    width: 453px;
    height: 305px; 
    object-fit: cover;
+   transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
   }
+  
+  .gallery-item img:hover {
+      /*transform: scale(1.1);*/
+      /* transform: rotateX(30deg); */
+      transform: translate(-50px,0px);
+      box-shadow: 10px 10px 15px #75859687;
+    }
+
 
 
   .my-client-card {
@@ -672,9 +713,19 @@ footer {
     align-items: center;
     margin: 32px auto;
     border: 2px solid color-mix(in srgb, var(--primary-color-text) 50%, transparent);
+    /* claude ai pakkus lõpuks sellist lahendust mingi modern css  */
     padding: 32px;
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
   }
-  /* claude ai pakkus lõpuks sellist lahendust mingi modern css  */
+  
+  .card:hover {
+      transform: translate(-5px,0px);
+      box-shadow: 10px 10px 15px #75859687;
+    }
+
+
+
+
 
   .card h4 {
     font-size: 24px;
