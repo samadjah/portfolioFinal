@@ -18,7 +18,7 @@
   font-family: "Roboto", sans-serif;
 }
 
-html.menu-panel.active.,
+html.menu-panel.active,
 body.menu-panel.active {
   overflow: hidden;
   position: fixed; /* This prevents bounce scrolling on iOS */
