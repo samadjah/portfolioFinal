@@ -27,7 +27,6 @@ body {
 }
 
 .container {
-  overflow: hidden;
   width: 100%;
   color: var(--primary-color-text);
   background-color: var(--primary-color-backgrounds);
@@ -66,6 +65,7 @@ body {
 
 
 .menu-panel {
+  overflow: hidden;
   position: absolute;
   right: -264px;
   top: 0;
