@@ -18,8 +18,8 @@
   font-family: "Roboto", sans-serif;
 }
 /* ja nüüd tundub, et tõmbasin pusserdamistega kogu menüü üle ekraani ja ei leia kohta üles */
-html .menu-panel.active,
-body .menu-panel.active{
+html .menu-panel,
+body .menu-panel{
   overflow: hidden;
   /* position: fixed; This prevents bounce scrolling on iOS */
   /* width: 100%; These ensure the body takes up the full viewport */
