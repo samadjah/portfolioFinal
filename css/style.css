@@ -72,7 +72,7 @@ body {
 
 
 .menu-panel {
-  overflow: hidden;
+  /* overflow: hidden; */
 /* topib siia ka ehk mõjub */
   position: absolute;
   right: -264px;
