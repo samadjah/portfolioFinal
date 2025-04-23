@@ -18,6 +18,13 @@
   font-family: "Roboto", sans-serif;
 }
 
+html.active,
+body.activ {
+  overflow: hidden;
+  position: fixed; /* This prevents bounce scrolling on iOS */
+  width: 100%; /* These ensure the body takes up the full viewport */
+  height: 100%;
+}
 
 body {
   margin: 0;
@@ -65,7 +72,6 @@ body {
 
 
 .menu-panel {
-  overflow: hidden;
   position: absolute;
   right: -264px;
   top: 0;
