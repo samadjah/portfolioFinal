@@ -8,8 +8,19 @@ const images = ['elemLogoRing.png', 'elemLogoRuut.png'];
 const modal = document.querySelector('.modal');
 const contactForm = document.querySelector('.contact-form')
 const btnOpenModal = document.querySelector('#btn-open-form');
+const inputName = document.querySelector('#name');
+const inputEmail = document.querySelector('#email');
+const inputMessage = document.querySelector('#message');
+const contactForm = document.querySelector('#mcontact-form');
+
+// vormi esitamine
+contactForm.addEventListener('submit', () => {
+  alert('form submitted!')
+})
 
 
+
+// localstorage kokkukorjamine
 btnOpenModal.addEventListener('click', () => {
   modal.style.display = 'block',
     contactForm.style.display = 'block';
