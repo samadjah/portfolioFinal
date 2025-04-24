@@ -5,6 +5,17 @@ const menuLinks = document.querySelectorAll('.menu-panel a');
 const btnClose = document.querySelector('.close');
 const frameImage = document.querySelector('#frame');
 const images = ['elemLogoRing.png', 'elemLogoRuut.png'];
+const modal = document.querySelector('.modal');
+const contactForm = document.querySelector('.contact-form.modal')
+const btnOpenModal = document.querySelector('#btn-open-form');
+
+
+btnOpenModal.addEventListener('click', () => {
+  modal.style.display = 'block',
+  contactForm.style.display = 'block'
+})
+
+
 
 let currentImageIndex = 0;
 
