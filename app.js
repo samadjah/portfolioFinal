@@ -11,12 +11,31 @@ const btnOpenModal = document.querySelector('#btn-open-form');
 const inputName = document.querySelector('#name');
 const inputEmail = document.querySelector('#email');
 const inputMessage = document.querySelector('#message');
-const contactForm = document.querySelector('#mcontact-form');
+const contactFormKaks = document.querySelector('#contact-form');
 
 // vormi esitamine
-contactForm.addEventListener('submit', () => {
-  alert('form submitted!')
-})
+contactFormKaks.addEventListener('submit', (event) => {
+  // alert('form submitted!');
+  event.preventDefault();
+
+  const name = inputName.value;
+  const email = inputEmail.value;
+  const message = inputMessage.value;
+  
+  //object literal
+  const formData = {
+    userName: name,
+    userEmail: email,
+    userMessage:message,
+  }
+
+  // logalStorage.setItem('formData', JSON.stringify(formData));
+  logalStorage.setItem('name', JSON.stringify(formData.userName));
+  logalStorage.setItem('email', JSON.stringify(formData.userEmail));
+  logalStorage.setItem('message', JSON.stringify(formData.userMessage));
+
+  console.log('form submitted');
+});
 
 
 
