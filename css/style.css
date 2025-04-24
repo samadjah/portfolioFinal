@@ -289,9 +289,6 @@ hr {
   margin: 32px;
 }
 
-.contact-form {
-  display: none;
-}
 
 .modal {
   display: none;
@@ -302,6 +299,10 @@ hr {
   left: 0;
   top: 0;
   z-index: 1;
+}
+
+.contact-form {
+  display: none;
 }
 
 
@@ -336,6 +337,43 @@ footer {
   text-align: center;
   padding-top: 48px;
 }
+/* kassiisilmub */
+
+
+.contact-form {
+  display: none;
+  width: 100%;
+  font-size: 20px;
+}
+.contact-form form{
+  text-align: start;
+  box-sizing: border-box;
+  padding: 32px;
+}
+
+input, textarea {
+  width: 100%;
+  background-color: var(--primary-color-butons);
+  border-radius: 6px;
+  border: 0;
+  border-top: 2.5px;
+  border-style: outset;
+}
+
+input {
+  height: 20px;
+}
+.btn-form button{
+  background-color: var(--primary-color-headlines);
+  color: var(--primary-color-backgrounds);
+  text-transform: none;
+  border-radius: 8px;
+  margin-left: 0;
+
+}
+
+
+
 
 @media (min-width: 600px) and (max-width:1204px) {
   .hamburger {

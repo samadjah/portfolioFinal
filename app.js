@@ -6,14 +6,20 @@ const btnClose = document.querySelector('.close');
 const frameImage = document.querySelector('#frame');
 const images = ['elemLogoRing.png', 'elemLogoRuut.png'];
 const modal = document.querySelector('.modal');
-const contactForm = document.querySelector('.contact-form.modal')
+const contactForm = document.querySelector('.contact-form')
 const btnOpenModal = document.querySelector('#btn-open-form');
 
 
 btnOpenModal.addEventListener('click', () => {
   modal.style.display = 'block',
-  contactForm.style.display = 'block'
-})
+    contactForm.style.display = 'block';
+});
+
+window.onclick = (event) => {
+  if (event.target == modal) {
+    modal.style.display = 'none';
+  }
+}
 
 
 
